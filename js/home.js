@@ -6,6 +6,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
     //  localStorage.removeItem('editEmp');
 });
 
+const remove = (indexToRemove) => {
+    // let data = localStorage.getItem('EmployeePayrollList')
+    // data=JSON.parse(localStorage.getItem('EmployeePayrollList'));
+    // data=data.splice(Number(indexToRemove),1);
+    // localStorage.setItem('EmployeePayrollList', JSON.stringify(data));
+}
+
 const getEmployeePayrollDataFromStorage = () => {
     return localStorage.getItem('EmployeePayrollList') ?
         JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
